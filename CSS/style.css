@@ -1324,6 +1324,16 @@ body {
     cursor: pointer;
 }
 
+.close-btn {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .close-btn {
+        display: block;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .hero {
