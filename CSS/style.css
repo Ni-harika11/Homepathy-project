@@ -98,11 +98,8 @@ body {
         width: 100%;
         height: 100vh;
         background: #fff;
-        /* Change to your theme color */
         top: 70px;
-        /* Adjust based on navbar height */
         left: -100%;
-        /* Hide menu off-screen */
         text-align: center;
         flex-direction: column;
         z-index: 1000;
@@ -112,18 +109,31 @@ body {
         margin: 20px 0;
     }
 
-    /* Logic to show menu when checkbox is clicked */
     #check:checked~.nav-links {
         left: 0;
     }
 
-    /* Hide desktop button, show mobile one */
     .desktop-btn {
         display: none;
     }
 
     .mobile-btn {
         display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+        order: -1;
+    }
+
+    .logo {
+        order: 1;
     }
 }
 
@@ -250,8 +260,6 @@ body {
         width: 90%;
     }
 }
-
-
 
 .input-group {
     display: flex;
@@ -835,10 +843,6 @@ body {
     background-color: var(--primary-blue);
 }
 
-/* ===============================
-   RESPONSIVE DESIGN
-================================= */
-
 /* Large Screens (1400px+) */
 @media (min-width: 1400px) {
     .testimonials-section h2 {
@@ -920,9 +924,9 @@ body {
 
     .testimonial-card p {
         font-size: 13px;
-    }w
+    }
 
-    .stars {
+    w .stars {
         font-size: 14px;
     }
 
@@ -1066,7 +1070,6 @@ body {
     opacity: 0.9;
 }
 
-/* Instagram Section */
 /* Instagram Section */
 .instagram-section {
     padding: 100px 0;
@@ -1484,7 +1487,6 @@ body {
 .appointment-bar {
     position: relative;
     margin: -60px auto 50px auto;
-    /* Centers it and pulls it up */
     background: white;
     width: 90%;
     max-width: 1200px;
